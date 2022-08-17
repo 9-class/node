@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="refresh" content="0; url=node.js"> 
+<meta http-equiv="refresh" content="0; url=nvar" http = require('http');
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World!');
+}).listen(8080);
 </head>
 </html>
